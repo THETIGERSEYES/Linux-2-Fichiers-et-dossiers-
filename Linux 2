@@ -1,0 +1,379 @@
+samia@Samia-Ubuntu:~/quests/shell$ ls
+fruits  vegetables
+samia@Samia-Ubuntu:~/quests/shell$ curl -L -o planets.zip curl -L -o planets.zip "https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: curl
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   148  100   148    0     0    614      0 --:--:-- --:--:-- --:--:--   614
+100   159  100   159    0     0    377      0 --:--:-- --:--:-- --:--:--   377
+100  293k  100  293k    0     0   388k      0 --:--:-- --:--:-- --:--:--  388k
+samia@Samia-Ubuntu:~/quests/shell$ ls
+fruits  planets.zip  vegetables
+samia@Samia-Ubuntu:~/quests/shell$ unzip planets.zip 
+Archive:  planets.zip
+   creating: planets/
+  inflating: planets/mercury.jpeg    
+  inflating: planets/earth.jpeg      
+  inflating: planets/pluto.jpeg      
+  inflating: planets/arrakis.jpeg    
+  inflating: planets/jupiter.jpeg    
+  inflating: planets/venus.jpeg      
+  inflating: planets/mars.jpeg       
+  inflating: planets/cybertron.jpeg  
+  inflating: planets/coruscant.jpeg  
+  inflating: planets/uranus.jpeg     
+  inflating: planets/neptune.jpeg    
+  inflating: planets/saturn.jpeg     
+samia@Samia-Ubuntu:~/quests/shell$ ls
+fruits  planets  planets.zip  vegetables
+samia@Samia-Ubuntu:~/quests/shell$ cd planets/
+samia@Samia-Ubuntu:~/quests/shell/planets$ ls -l
+total 348
+-rw-r--r-- 1 samia samia 23224 févr. 25  2019 arrakis.jpeg
+-rw-r--r-- 1 samia samia 30475 févr. 25  2019 coruscant.jpeg
+-rw-r--r-- 1 samia samia 36718 févr. 25  2019 cybertron.jpeg
+-rw-r--r-- 1 samia samia 40334 févr. 25  2019 earth.jpeg
+-rw-r--r-- 1 samia samia 25364 févr. 25  2019 jupiter.jpeg
+-rw-r--r-- 1 samia samia 31508 févr. 25  2019 mars.jpeg
+-rw-r--r-- 1 samia samia 25390 févr. 25  2019 mercury.jpeg
+-rw-r--r-- 1 samia samia 34406 févr. 25  2019 neptune.jpeg
+-rw-r--r-- 1 samia samia 44966 févr. 25  2019 pluto.jpeg
+-rw-r--r-- 1 samia samia  8338 févr. 25  2019 saturn.jpeg
+-rw-r--r-- 1 samia samia 18988 févr. 25  2019 uranus.jpeg
+-rw-r--r-- 1 samia samia 13142 févr. 25  2019 venus.jpeg
+samia@Samia-Ubuntu:~/quests/shell/planets$ mkdir real fictif hosted 
+samia@Samia-Ubuntu:~/quests/shell/planets$ ls -l
+total 360
+-rw-r--r-- 1 samia samia 23224 févr. 25  2019 arrakis.jpeg
+-rw-r--r-- 1 samia samia 30475 févr. 25  2019 coruscant.jpeg
+-rw-r--r-- 1 samia samia 36718 févr. 25  2019 cybertron.jpeg
+-rw-r--r-- 1 samia samia 40334 févr. 25  2019 earth.jpeg
+drwxrwxr-x 2 samia samia  4096 sept. 15 16:10 fictif
+drwxrwxr-x 2 samia samia  4096 sept. 15 16:10 hosted
+-rw-r--r-- 1 samia samia 25364 févr. 25  2019 jupiter.jpeg
+-rw-r--r-- 1 samia samia 31508 févr. 25  2019 mars.jpeg
+-rw-r--r-- 1 samia samia 25390 févr. 25  2019 mercury.jpeg
+-rw-r--r-- 1 samia samia 34406 févr. 25  2019 neptune.jpeg
+-rw-r--r-- 1 samia samia 44966 févr. 25  2019 pluto.jpeg
+drwxrwxr-x 2 samia samia  4096 sept. 15 16:10 real
+-rw-r--r-- 1 samia samia  8338 févr. 25  2019 saturn.jpeg
+-rw-r--r-- 1 samia samia 18988 févr. 25  2019 uranus.jpeg
+-rw-r--r-- 1 samia samia 13142 févr. 25  2019 venus.jpeg
+samia@Samia-Ubuntu:~/quests/shell/planets$ cd real
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ mkdir terrestrial giantgaz tinyplanet
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ ls -l
+total 12
+drwxrwxr-x 2 samia samia 4096 sept. 15 16:18 giantgaz
+drwxrwxr-x 2 samia samia 4096 sept. 15 16:18 terrestrial
+drwxrwxr-x 2 samia samia 4096 sept. 15 16:18 tinyplanet
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ cd terrestrial/
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ mv ../../earth.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ mv ../../m
+mars.jpeg     mercury.jpeg  
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ mv ../../mars.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ mv ../../mercury.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ mv ../../venus.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ ls -l
+total 116
+-rw-r--r-- 1 samia samia 40334 févr. 25  2019 earth.jpeg
+-rw-r--r-- 1 samia samia 31508 févr. 25  2019 mars.jpeg
+-rw-r--r-- 1 samia samia 25390 févr. 25  2019 mercury.jpeg
+-rw-r--r-- 1 samia samia 13142 févr. 25  2019 venus.jpeg
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ cd ..
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ cd tinyplanet/
+samia@Samia-Ubuntu:~/quests/shell/planets/real/tinyplanet$ mv ../../pluto.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/tinyplanet$ cd ..
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ cd giantgaz/
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../
+arrakis.jpeg    fictif/         neptune.jpeg    uranus.jpeg
+coruscant.jpeg  hosted/         real/           
+cybertron.jpeg  jupiter.jpeg    saturn.jpeg     
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../arrakis.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../neptune.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../uranus.jpeg .samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../jupiter.jpeg 
+mv: opérande de fichier cible manquant après '../../jupiter.jpeg'
+Saisissez « mv --help » pour plus d'informations.
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../jupiter.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../saturn.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ rm arrakis.jpeg 
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ ls -l
+total 96
+-rw-r--r-- 1 samia samia 25364 févr. 25  2019 jupiter.jpeg
+-rw-r--r-- 1 samia samia 34406 févr. 25  2019 neptune.jpeg
+-rw-r--r-- 1 samia samia  8338 févr. 25  2019 saturn.jpeg
+-rw-r--r-- 1 samia samia 18988 févr. 25  2019 uranus.jpeg
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ cd ..
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ cd ..
+samia@Samia-Ubuntu:~/quests/shell/planets$ cd fictif/       
+samia@Samia-Ubuntu:~/quests/shell/planets/fictif$ mv ../c
+coruscant.jpeg  cybertron.jpeg  
+samia@Samia-Ubuntu:~/quests/shell/planets/fictif$ mv ../coruscant.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/fictif$ mv ../cybertron.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/fictif$ mv ../arrakis.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/fictif$ cd ..
+samia@Samia-Ubuntu:~/quests/shell/planets$ cp fictif/arrakis.jpeg fictif/coruscant.jpeg fictif/cybertron.jpeg hosted/
+samia@Samia-Ubuntu:~/quests/shell$ ls
+fruits  vegetables
+samia@Samia-Ubuntu:~/quests/shell$ curl -L -o planets.zip curl -L -o planets.zip "https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: curl
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   148  100   148    0     0    614      0 --:--:-- --:--:-- --:--:--   614
+100   159  100   159    0     0    377      0 --:--:-- --:--:-- --:--:--   377
+100  293k  100  293k    0     0   388k      0 --:--:-- --:--:-- --:--:--  388k
+samia@Samia-Ubuntu:~/quests/shell$ ls
+fruits  planets.zip  vegetables
+samia@Samia-Ubuntu:~/quests/shell$ unzip planets.zip 
+Archive:  planets.zip
+   creating: planets/
+  inflating: planets/mercury.jpeg    
+  inflating: planets/earth.jpeg      
+  inflating: planets/pluto.jpeg      
+  inflating: planets/arrakis.jpeg    
+  inflating: planets/jupiter.jpeg    
+  inflating: planets/venus.jpeg      
+  inflating: planets/mars.jpeg       
+  inflating: planets/cybertron.jpeg  
+  inflating: planets/coruscant.jpeg  
+  inflating: planets/uranus.jpeg     
+  inflating: planets/neptune.jpeg    
+  inflating: planets/saturn.jpeg     
+samia@Samia-Ubuntu:~/quests/shell$ ls
+fruits  planets  planets.zip  vegetables
+samia@Samia-Ubuntu:~/quests/shell$ cd planets/
+samia@Samia-Ubuntu:~/quests/shell/planets$ ls -l
+total 348
+-rw-r--r-- 1 samia samia 23224 févr. 25  2019 arrakis.jpeg
+-rw-r--r-- 1 samia samia 30475 févr. 25  2019 coruscant.jpeg
+-rw-r--r-- 1 samia samia 36718 févr. 25  2019 cybertron.jpeg
+-rw-r--r-- 1 samia samia 40334 févr. 25  2019 earth.jpeg
+-rw-r--r-- 1 samia samia 25364 févr. 25  2019 jupiter.jpeg
+-rw-r--r-- 1 samia samia 31508 févr. 25  2019 mars.jpeg
+-rw-r--r-- 1 samia samia 25390 févr. 25  2019 mercury.jpeg
+-rw-r--r-- 1 samia samia 34406 févr. 25  2019 neptune.jpeg
+-rw-r--r-- 1 samia samia 44966 févr. 25  2019 pluto.jpeg
+-rw-r--r-- 1 samia samia  8338 févr. 25  2019 saturn.jpeg
+-rw-r--r-- 1 samia samia 18988 févr. 25  2019 uranus.jpeg
+-rw-r--r-- 1 samia samia 13142 févr. 25  2019 venus.jpeg
+samia@Samia-Ubuntu:~/quests/shell/planets$ mkdir real fictif hosted 
+samia@Samia-Ubuntu:~/quests/shell/planets$ ls -l
+total 360
+-rw-r--r-- 1 samia samia 23224 févr. 25  2019 arrakis.jpeg
+-rw-r--r-- 1 samia samia 30475 févr. 25  2019 coruscant.jpeg
+-rw-r--r-- 1 samia samia 36718 févr. 25  2019 cybertron.jpeg
+-rw-r--r-- 1 samia samia 40334 févr. 25  2019 earth.jpeg
+drwxrwxr-x 2 samia samia  4096 sept. 15 16:10 fictif
+drwxrwxr-x 2 samia samia  4096 sept. 15 16:10 hosted
+-rw-r--r-- 1 samia samia 25364 févr. 25  2019 jupiter.jpeg
+-rw-r--r-- 1 samia samia 31508 févr. 25  2019 mars.jpeg
+-rw-r--r-- 1 samia samia 25390 févr. 25  2019 mercury.jpeg
+-rw-r--r-- 1 samia samia 34406 févr. 25  2019 neptune.jpeg
+-rw-r--r-- 1 samia samia 44966 févr. 25  2019 pluto.jpeg
+drwxrwxr-x 2 samia samia  4096 sept. 15 16:10 real
+-rw-r--r-- 1 samia samia  8338 févr. 25  2019 saturn.jpeg
+-rw-r--r-- 1 samia samia 18988 févr. 25  2019 uranus.jpeg
+-rw-r--r-- 1 samia samia 13142 févr. 25  2019 venus.jpeg
+samia@Samia-Ubuntu:~/quests/shell/planets$ cd real
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ mkdir terrestrial giantgaz tinyplanet
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ ls -l
+total 12
+drwxrwxr-x 2 samia samia 4096 sept. 15 16:18 giantgaz
+drwxrwxr-x 2 samia samia 4096 sept. 15 16:18 terrestrial
+drwxrwxr-x 2 samia samia 4096 sept. 15 16:18 tinyplanet
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ cd terrestrial/
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ mv ../../earth.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ mv ../../m
+mars.jpeg     mercury.jpeg  
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ mv ../../mars.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ mv ../../mercury.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ mv ../../venus.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ ls -l
+total 116
+-rw-r--r-- 1 samia samia 40334 févr. 25  2019 earth.jpeg
+-rw-r--r-- 1 samia samia 31508 févr. 25  2019 mars.jpeg
+-rw-r--r-- 1 samia samia 25390 févr. 25  2019 mercury.jpeg
+-rw-r--r-- 1 samia samia 13142 févr. 25  2019 venus.jpeg
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ cd ..
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ cd tinyplanet/
+samia@Samia-Ubuntu:~/quests/shell/planets/real/tinyplanet$ mv ../../pluto.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/tinyplanet$ cd ..
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ cd giantgaz/
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../
+arrakis.jpeg    fictif/         neptune.jpeg    uranus.jpeg
+coruscant.jpeg  hosted/         real/           
+cybertron.jpeg  jupiter.jpeg    saturn.jpeg     
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../arrakis.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../neptune.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../uranus.jpeg .samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../jupiter.jpeg 
+mv: opérande de fichier cible manquant après '../../jupiter.jpeg'
+Saisissez « mv --help » pour plus d'informations.
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../jupiter.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../saturn.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ rm arrakis.jpeg 
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ ls -l
+total 96
+-rw-r--r-- 1 samia samia 25364 févr. 25  2019 jupiter.jpeg
+-rw-r--r-- 1 samia samia 34406 févr. 25  2019 neptune.jpeg
+-rw-r--r-- 1 samia samia  8338 févr. 25  2019 saturn.jpeg
+-rw-r--r-- 1 samia samia 18988 févr. 25  2019 uranus.jpeg
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ cd ..
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ cd ..
+samia@Samia-Ubuntu:~/quests/shell/planets$ cd fictif/       
+samia@Samia-Ubuntu:~/quests/shell/planets/fictif$ mv ../c
+coruscant.jpeg  cybertron.jpeg  
+samia@Samia-Ubuntu:~/quests/shell/planets/fictif$ mv ../coruscant.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/fictif$ mv ../cybertron.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/fictif$ mv ../arrakis.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/fictif$ cd ..
+samia@Samia-Ubuntu:~/quests/shell/planets$ cp fictif/arrakis.jpeg fictif/coruscant.jpeg fictif/cybertron.jpeg hosted/
+samia@Samia-Ubuntu:~/quests/shell$ ls
+fruits  vegetables
+samia@Samia-Ubuntu:~/quests/shell$ curl -L -o planets.zip curl -L -o planets.zip "https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: curl
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   148  100   148    0     0    614      0 --:--:-- --:--:-- --:--:--   614
+100   159  100   159    0     0    377      0 --:--:-- --:--:-- --:--:--   377
+100  293k  100  293k    0     0   388k      0 --:--:-- --:--:-- --:--:--  388k
+samia@Samia-Ubuntu:~/quests/shell$ ls
+fruits  planets.zip  vegetables
+samia@Samia-Ubuntu:~/quests/shell$ unzip planets.zip 
+Archive:  planets.zip
+   creating: planets/
+  inflating: planets/mercury.jpeg    
+  inflating: planets/earth.jpeg      
+  inflating: planets/pluto.jpeg      
+  inflating: planets/arrakis.jpeg    
+  inflating: planets/jupiter.jpeg    
+  inflating: planets/venus.jpeg      
+  inflating: planets/mars.jpeg       
+  inflating: planets/cybertron.jpeg  
+  inflating: planets/coruscant.jpeg  
+  inflating: planets/uranus.jpeg     
+  inflating: planets/neptune.jpeg    
+  inflating: planets/saturn.jpeg     
+samia@Samia-Ubuntu:~/quests/shell$ ls
+fruits  planets  planets.zip  vegetables
+samia@Samia-Ubuntu:~/quests/shell$ cd planets/
+samia@Samia-Ubuntu:~/quests/shell/planets$ ls -l
+total 348
+-rw-r--r-- 1 samia samia 23224 févr. 25  2019 arrakis.jpeg
+-rw-r--r-- 1 samia samia 30475 févr. 25  2019 coruscant.jpeg
+-rw-r--r-- 1 samia samia 36718 févr. 25  2019 cybertron.jpeg
+-rw-r--r-- 1 samia samia 40334 févr. 25  2019 earth.jpeg
+-rw-r--r-- 1 samia samia 25364 févr. 25  2019 jupiter.jpeg
+-rw-r--r-- 1 samia samia 31508 févr. 25  2019 mars.jpeg
+-rw-r--r-- 1 samia samia 25390 févr. 25  2019 mercury.jpeg
+-rw-r--r-- 1 samia samia 34406 févr. 25  2019 neptune.jpeg
+-rw-r--r-- 1 samia samia 44966 févr. 25  2019 pluto.jpeg
+-rw-r--r-- 1 samia samia  8338 févr. 25  2019 saturn.jpeg
+-rw-r--r-- 1 samia samia 18988 févr. 25  2019 uranus.jpeg
+-rw-r--r-- 1 samia samia 13142 févr. 25  2019 venus.jpeg
+samia@Samia-Ubuntu:~/quests/shell/planets$ mkdir real fictif hosted 
+samia@Samia-Ubuntu:~/quests/shell/planets$ ls -l
+total 360
+-rw-r--r-- 1 samia samia 23224 févr. 25  2019 arrakis.jpeg
+-rw-r--r-- 1 samia samia 30475 févr. 25  2019 coruscant.jpeg
+-rw-r--r-- 1 samia samia 36718 févr. 25  2019 cybertron.jpeg
+-rw-r--r-- 1 samia samia 40334 févr. 25  2019 earth.jpeg
+drwxrwxr-x 2 samia samia  4096 sept. 15 16:10 fictif
+drwxrwxr-x 2 samia samia  4096 sept. 15 16:10 hosted
+-rw-r--r-- 1 samia samia 25364 févr. 25  2019 jupiter.jpeg
+-rw-r--r-- 1 samia samia 31508 févr. 25  2019 mars.jpeg
+-rw-r--r-- 1 samia samia 25390 févr. 25  2019 mercury.jpeg
+-rw-r--r-- 1 samia samia 34406 févr. 25  2019 neptune.jpeg
+-rw-r--r-- 1 samia samia 44966 févr. 25  2019 pluto.jpeg
+drwxrwxr-x 2 samia samia  4096 sept. 15 16:10 real
+-rw-r--r-- 1 samia samia  8338 févr. 25  2019 saturn.jpeg
+-rw-r--r-- 1 samia samia 18988 févr. 25  2019 uranus.jpeg
+-rw-r--r-- 1 samia samia 13142 févr. 25  2019 venus.jpeg
+samia@Samia-Ubuntu:~/quests/shell/planets$ cd real
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ mkdir terrestrial giantgaz tinyplanet
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ ls -l
+total 12
+drwxrwxr-x 2 samia samia 4096 sept. 15 16:18 giantgaz
+drwxrwxr-x 2 samia samia 4096 sept. 15 16:18 terrestrial
+drwxrwxr-x 2 samia samia 4096 sept. 15 16:18 tinyplanet
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ cd terrestrial/
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ mv ../../earth.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ mv ../../m
+mars.jpeg     mercury.jpeg  
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ mv ../../mars.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ mv ../../mercury.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ mv ../../venus.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ ls -l
+total 116
+-rw-r--r-- 1 samia samia 40334 févr. 25  2019 earth.jpeg
+-rw-r--r-- 1 samia samia 31508 févr. 25  2019 mars.jpeg
+-rw-r--r-- 1 samia samia 25390 févr. 25  2019 mercury.jpeg
+-rw-r--r-- 1 samia samia 13142 févr. 25  2019 venus.jpeg
+samia@Samia-Ubuntu:~/quests/shell/planets/real/terrestrial$ cd ..
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ cd tinyplanet/
+samia@Samia-Ubuntu:~/quests/shell/planets/real/tinyplanet$ mv ../../pluto.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/tinyplanet$ cd ..
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ cd giantgaz/
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../
+arrakis.jpeg    fictif/         neptune.jpeg    uranus.jpeg
+coruscant.jpeg  hosted/         real/           
+cybertron.jpeg  jupiter.jpeg    saturn.jpeg     
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../arrakis.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../neptune.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../uranus.jpeg .samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../jupiter.jpeg 
+mv: opérande de fichier cible manquant après '../../jupiter.jpeg'
+Saisissez « mv --help » pour plus d'informations.
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../jupiter.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ mv ../../saturn.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ rm arrakis.jpeg 
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ ls -l
+total 96
+-rw-r--r-- 1 samia samia 25364 févr. 25  2019 jupiter.jpeg
+-rw-r--r-- 1 samia samia 34406 févr. 25  2019 neptune.jpeg
+-rw-r--r-- 1 samia samia  8338 févr. 25  2019 saturn.jpeg
+-rw-r--r-- 1 samia samia 18988 févr. 25  2019 uranus.jpeg
+samia@Samia-Ubuntu:~/quests/shell/planets/real/giantgaz$ cd ..
+samia@Samia-Ubuntu:~/quests/shell/planets/real$ cd ..
+samia@Samia-Ubuntu:~/quests/shell/planets$ cd fictif/       
+samia@Samia-Ubuntu:~/quests/shell/planets/fictif$ mv ../c
+coruscant.jpeg  cybertron.jpeg  
+samia@Samia-Ubuntu:~/quests/shell/planets/fictif$ mv ../coruscant.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/fictif$ mv ../cybertron.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/fictif$ mv ../arrakis.jpeg .
+samia@Samia-Ubuntu:~/quests/shell/planets/fictif$ cd ..
+samia@Samia-Ubuntu:~/quests/shell/planets$ cp fictif/arrakis.jpeg fictif/coruscant.jpeg fictif/cybertron.jpeg hosted/
+samia@Samia-Ubuntu:~/quests/shell/planets$ cp fictif/arrakis.jpeg hosted/
+samia@Samia-Ubuntu:~/quests/shell/planets$ cd real/
+samia@Samia-Ubuntu:~/quests/shell/planets$ rm -r tinyplanet/
+samia@Samia-Ubuntu:~/quests/shell/planets$ cd ..
+samia@Samia-Ubuntu:~/quests/shell/planets$ find planets/
+planets/
+planets/hosted
+planets/hosted/coruscant.jpeg
+planets/hosted/earth.jpeg
+planets/hosted/cybertron.jpeg
+planets/hosted/arrakis.jpeg
+planets/fictif
+planets/fictif/coruscant.jpeg
+planets/fictif/cybertron.jpeg
+planets/fictif/arrakis.jpeg
+planets/real
+planets/real/giantgaz
+planets/real/giantgaz/neptune.jpeg
+planets/real/giantgaz/jupiter.jpeg
+planets/real/giantgaz/saturn.jpeg
+planets/real/giantgaz/uranus.jpeg
+planets/real/terrestrial
+planets/real/terrestrial/mercury.jpeg
+planets/real/terrestrial/venus.jpeg
+planets/real/terrestrial/mars.jpeg
+planets/real/terrestrial/earth.jpeg
+samia@Samia-Ubuntu:~/quests/shell/planets$ 
+
+
+
+
