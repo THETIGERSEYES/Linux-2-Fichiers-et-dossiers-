@@ -1,0 +1,62 @@
+  635  unzip planets.zip 
+  636  ls
+  637  cd planets/
+  638  mkdir real fictional inhabited 
+  639  ls
+  640  cd real/
+  641  mkdir terrestrial gas-giants dwarf-planets
+  642  ls
+  643  cd dwarf-planets/
+  644  mv ../../pluto.jpeg 
+  645  ls
+  646  cd ..
+  647  mv ../earth.jpeg terrestrial/
+  648  mv ../mars.jpeg ../mercury.jpeg ../venus.jpeg terrestrial/
+  649  ls terrestrial/
+  650  cd ../fictional/
+  651  cd ..
+  652  mv ../neptune.jpeg ../jupiter.jpeg ../saturn.jpeg ../uranus.jpeg ^C
+  653  cd real/
+  654  mv ../neptune.jpeg ../jupiter.jpeg ../saturn.jpeg ../uranus.jpeg gas-giants/
+  655  ls gas-giants/
+  656  cd ../fictional/
+  657  ls planet
+  658  mv ../coruscant.jpeg 
+  659  mv ../coruscant.jpeg .
+  660  mv ../cybertron.jpeg .
+  661  mv ../arrakis.jpeg .
+  662  ls
+  663  cd..
+  664  cd ..
+  665  cp real/terrestrial/earth.jpeg fictional/arrakis.jpeg fictional/coruscant.jpeg fictional/cybertron.jpeg inhabited/
+  666  ls inhabited/
+  667  find
+  668  cd real/
+  669  rm -r dwarf-planets/
+  670  cd ..
+  671  find
+  672  history 
+  
+commande find me donne : 
+planets/
+planets/hosted
+planets/hosted/coruscant.jpeg
+planets/hosted/earth.jpeg
+planets/hosted/cybertron.jpeg
+planets/hosted/arrakis.jpeg
+planets/fictif
+planets/fictif/coruscant.jpeg
+planets/fictif/cybertron.jpeg
+planets/fictif/arrakis.jpeg
+planets/real
+planets/real/giantgaz
+planets/real/giantgaz/neptune.jpeg
+planets/real/giantgaz/jupiter.jpeg
+planets/real/giantgaz/saturn.jpeg
+planets/real/giantgaz/uranus.jpeg
+planets/real/terrestrial
+planets/real/terrestrial/mercury.jpeg
+planets/real/terrestrial/venus.jpeg
+planets/real/terrestrial/mars.jpeg
+planets/real/terrestrial/earth.jpeg
+samia@Samia-Ubuntu:~/quests/shell/planets$ 
